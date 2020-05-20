@@ -1,0 +1,36 @@
+.form-group{
+  text-align: left;
+
+  &>.form-title{
+    font-size: 13px;
+    font-weight: bold;
+    color:#3b3833;
+    margin-bottom: 12px;
+  }
+
+  &>.form-textarea{
+    width:~"calc(100% - 28px)";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 150%;
+    color:#3b3833;
+    background-color: #fff;
+    border: solid 1px #d2d8dd;
+    border-radius: 4px;
+    padding: 14px;
+
+    &:focus{
+      border-color:#2e82c0;
+    }
+
+    &::placeholder{
+      color: #c4c3c1;
+    }
+  }
+
+  &>.form-help{
+    margin-top: 14px;
+    font-size: 12px;
+    color:#eb1e1e;
+  }
+}

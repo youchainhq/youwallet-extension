@@ -1,0 +1,21 @@
+.steps-wrapper{
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &>div{
+    margin: 0 4px;
+    width:8px;
+    height: 8px;
+    border:solid 1px #c7c7c7;
+    border-radius: 100%;
+
+    &.active{
+      background-color: #c7c7c7;
+    }
+  }
+}

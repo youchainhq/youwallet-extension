@@ -1,0 +1,111 @@
+.select-layout{
+  flex: 1;
+
+  .select-label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:  ~"calc(100% - 28px)";
+    height: 48px;
+    line-height: 48px;
+    background-color:#fff;
+    border:solid 1px #d2d8dd;
+    border-radius: 4px;
+    padding: 0 14px;
+    color:#3b3833;
+
+    &>.label{
+      flex: 1;
+      word-break: break-all;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-align: left;
+      font-size: 14px;
+      font-weight: bold;
+
+      & + div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>section{
+          line-height: 100%;
+          text-align: right;
+          margin-right: 14px;
+
+          &>h4{
+            margin: 0;
+            font-size: 12px;
+            font-weight: bold;
+            color:#3b3833;
+          }
+          &>small{
+            display: block;
+            font-size: 11px;
+            color:#bab9b5;
+            margin-top: 5px;
+          }
+        }
+
+        &>i{
+          color:#c4c3c1;
+        }
+      }
+    }
+  }
+
+  .dropdown-content{
+    background-color: #fff;
+    border:solid 1px #d9d9d9;
+    width: 100%;
+    position: absolute;
+    top:~"calc(100% - 2px)";
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    & > ul {
+      padding:0;
+      margin: 0;
+
+      & > li > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 14px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: bold;
+        color:#908d88;
+
+        &>span{
+          flex: 1;
+          text-align: left;
+        }
+
+        &>section{
+          line-height: 100%;
+          text-align: right;
+
+          &>h4{
+            margin: 0;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          &>small{
+            display: block;
+            font-size: 11px;
+            opacity: 0.5;
+            margin-top: 5px;
+          }
+        }
+
+        &:hover,
+        &.selected {
+          color: #3b3833;
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.gas-diy-wrapper{
+  position:absolute;
+  top:70px;
+  left:0;
+  right:0;
+  width: 100%;
+  height: ~"calc(100% - 80px)";
+  background-color: #ffffff;
+  padding: 0;
+
+  &>section{
+    &:first-child{
+      &>.header{
+        position: relative;
+        background-color: #fff;
+        -webkit-box-shadow: 0 1px 0 0 #eeeeee;
+        box-shadow: 0 1px 0 0 #eeeeee;
+
+        &>h1{
+          margin: 0;
+          font-size: 18px;
+          font-weight: 600;
+          height: 50px;
+          line-height: 50px;
+        }
+
+        &>a{
+          position: absolute;
+          top:10px;
+          right:15px;
+          font-size: 22px;
+        }
+      }
+
+      &>.body{
+        padding: 20px;
+
+        &>.form-wrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 28px;
+
+          &:first-child{
+            margin-bottom: 20px;
+          }
+
+          &:first-child,
+          &:nth-child(2){
+            position: relative;
+          }
+
+          & > .form-title {
+            margin-right: 14px;
+            font-size: 14px;
+            font-weight: bold;
+            min-width: 60px;
+            text-align: justify;
+            text-align-last: justify;
+
+            &>small{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 5px;
+              font-size: 12px;
+            }
+
+            & + div {
+              flex: 1;
+
+              &.text{
+                font-size: 14px;
+                font-weight: bold;
+                text-align: right;
+
+                &.total{
+                  font-size: 16px;
+                }
+
+                &>small{
+                  display: block;
+                  margin-top: 5px;
+                  font-size: 12px;
+                  font-weight: normal;
+                  color:#bab9b5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &:last-child{
+      margin: 5px 20px;
+    }
+  }
+}

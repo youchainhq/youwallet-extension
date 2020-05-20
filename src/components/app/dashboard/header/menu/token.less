@@ -1,0 +1,42 @@
+.menu-token-item{
+  position: relative;
+
+  &>.action-wrapper{
+    position: absolute;
+    top:60px;
+    right:20px;
+    z-index: 19;
+    border-radius: 3px;
+    background-color: rgba(76, 76, 76, 0.98);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    padding: 15px;
+
+    &>li{
+      &>div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color:#fff;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      &:last-child{
+        &>div{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &>.mask{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: transparent;
+    width: 100%;
+    height:100%;
+    z-index: 10;
+  }
+}

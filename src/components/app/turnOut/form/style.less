@@ -1,0 +1,105 @@
+.turnOut-form-wrapper{
+  .form-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &.gas{
+      margin-bottom: 0;
+
+      &>.gas-diy{
+        background-color: #fff;
+        border: solid 1px #d2d8dd;
+        border-radius: 4px;
+        padding: 0 14px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>section{
+          &:first-child{
+            text-align: left;
+            &>h4{
+              font-size: 15px;
+              font-weight: bold;
+              color: #3b3833;
+              margin: 0;
+            }
+            &>small{
+              font-size: 12px;
+              color:#bab9b5;
+              display: block;
+            }
+          }
+
+          &:last-child{
+            &>a{
+              font-size: 14px;
+              color:#9206f1;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    &>.form-title{
+      margin-right: 14px;
+      font-size: 14px;
+      font-weight: bold;
+      min-width: 56px;
+      text-align: justify;
+      text-align-last: justify;
+
+      &+div{
+        flex:1;
+      }
+    }
+
+    &>.form-from{
+      border:solid 1px #d2d8dd;
+      border-radius: 4px;
+      padding: 14px;
+      text-align: left;
+
+      &>section{
+        &:first-child{
+          font-size: 16px;
+          font-weight: bold;
+        }
+        &:nth-child(2){
+          margin-top: 4px;
+          font-size: 12px;
+          font-weight: bold;
+        }
+        &:nth-child(3){
+          margin-top: 4px;
+          font-size: 12px;
+          color:#bab9b5;
+        }
+      }
+    }
+  }
+
+  .gas-options-wrapper{
+    text-align: right;
+    margin-top: 12px;
+    &>a{
+      font-size: 12px;
+      color:#9206f1;
+      text-decoration: underline;
+    }
+  }
+
+  &.en{
+    .form-wrapper{
+      &>.form-title{
+        text-align: left;
+        text-align-last: left;
+      }
+    }
+  }
+}

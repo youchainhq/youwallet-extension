@@ -1,0 +1,74 @@
+.form-group{
+  text-align: left;
+  position: relative;
+
+  &>.form-title{
+    font-size: 13px;
+    font-weight: bold;
+    color:#3b3833;
+    margin-bottom: 12px;
+  }
+
+  &>.form-input{
+    width:~"calc(100% - 28px)";
+    height: 48px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#3b3833;
+    background-color: #fff;
+    border: solid 1px #d2d8dd;
+    border-radius: 4px;
+    padding: 0 14px;
+
+    &:focus{
+      border-color:#2e82c0;
+    }
+
+    &::placeholder{
+      color: #c4c3c1;
+    }
+
+    &.text-right{
+      text-align: right;
+    }
+
+    & + .file-input{
+      position: absolute;
+      top:0;
+      left:0;
+      height: 48px;
+      width:100%;
+      opacity: 0;
+    }
+
+  }
+
+  &>.form-help{
+    margin-top: 14px;
+    font-size: 12px;
+    color:#eb1e1e;
+  }
+
+  &.has-icon{
+    position:relative;
+
+    &>i{
+      position: absolute;
+      top:19px;
+      left:14px;
+      font-size: 14px;
+      color:#c4c3c1;
+    }
+
+    &>.form-input{
+      width:~"calc(100% - 46px)";
+      padding: 0 14px 0 32px;
+    }
+
+    &.has-title{
+      &>i{
+        top:46px;
+      }
+    }
+  }
+}
