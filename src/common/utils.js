@@ -52,7 +52,7 @@ const Utils = {
   getAccountAtIndex(mnemonic, index = 0) {
     const seed = bip39.mnemonicToSeed(mnemonic);
     const node = bip32.fromSeed(seed);
-    const child = node.derivePath(`m/44'/195'/${ index }'/0/0`);
+    const child = node.derivePath(`m/44'/1010'/${ index }'/0/0`);
     const privateKey = child.privateKey.toString('hex');
     return Storage.youchain.you.accounts.privateKeyToAccount(`0x${privateKey}`);
   },
